@@ -58,9 +58,7 @@ Step 1: Configure RD CAP policy
   #. Right click your server and select RD Gateway Manager:
 
      .. thumbnail:: _images/pic2.png
-
 |
-
   #. In the RD Gateway Manager, right-click on the server name and expand **Policies**
 
   #. Click on :guilabel:`Central Network Policy Servers`
