@@ -51,15 +51,14 @@ The high level target architecture is shown below. The user requests a remote de
 Step 1: Configure RD CAP policy
 ===============================
 
-  #. Open Server Manager and click on Remote Desktop Services
+#. Open Server Manager and click on :guilabel:`Remote Desktop Services`
 
-  #. In the Remote Desktop Services, click on Servers
+#. In the Remote Desktop Services, click on :guilabel:`Servers`
 
-  #. Right click your server and select RD Gateway Manager:
+#. Right click your server and select **RD Gateway Manager**:
 
-     .. thumbnail:: _images/pic2.png
+   .. thumbnail:: _images/pic2.png
 
-|
-  #. In the RD Gateway Manager, right-click on the server name and expand **Policies**
+#. In the RD Gateway Manager, right-click on the server name and expand **Policies**
 
-  #. Click on :guilabel:`Central Network Policy Servers`
+#. Click on :guilabel:`Central Network Policy Servers`
