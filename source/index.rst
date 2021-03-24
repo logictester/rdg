@@ -64,6 +64,10 @@ Step 1: Configure RD CAP policy
 
 #. Click on :guilabel:`Central Network Policy Servers`
 
-#. On the right side, click on :guilabel:`Configure Central RD CAP`, server properties opens, click on :guilabel:`RD CAP Store`:
+#. Click on :guilabel:`Configure Central RD CAP`, server properties opens, click on :guilabel:`RD CAP Store`:
 
    .. thumbnail:: _images/pic3.png
+
+#. Select **Central server running NPS**
+
+#. Type in the RADIUS server FQDN or IP (see reference below) in the **Enter a name or IP address for the server running NPS:** field and click :guilabel:`Add`
