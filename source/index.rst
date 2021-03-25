@@ -98,3 +98,9 @@ Step 1: Configure RD CAP policy
         |              |                             |                   |
         |              |    rad2.safenet-inc.com     |    69.20.230.201  |
         +--------------+-----------------------------+-------------------+
+
+#. Type in your Shared Secret (Same Shared Secret configured in STA Auth Node in step 3.7) in the **Enter a new shared secret:** field and click :guilabel:`OK`
+
+   .. thumbnail:: _images/pic4.png
+
+#. Click :guilabel:`Apply` and :guilabel:`OK` to save the RD CAP settings
