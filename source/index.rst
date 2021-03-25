@@ -109,29 +109,29 @@ RD CAP configuration will create all the required policies in the local NPS serv
 
 .. note:: Depending on your service zone select the appropriate FQDN or IP address (FQDN is preferred):
 
-+--------------+-----------------------------+-------------------+
-| Service Zone |            FQDN             |     IP Address    |
-+--------------+-----------------------------+-------------------+
-|              | ::                          | ::                |
-|              |                             |                   |
-|              |    radius1.eu.safenetid.com |    52.47.114.37   |
-| EU           |                             |                   |
-|              | ::                          | ::                |
-|              |                             |                   |
-|              |    radius2.eu.safenetid.com |    52.47.42.111   |
-+--------------+-----------------------------+-------------------+
-|              | ::                          | ::                |
-| US           |                             |                   |
-|              |    radius1.us.safenetid.com |    35.196.203.247 |
-+--------------+-----------------------------+-------------------+
-|              | ::                          | ::                |
-|              |                             |                   |
-|              |    rad1.safenet-inc.com     |    109.73.120.148 |
-| Classic      |                             |                   |
-|              | ::                          | ::                |
-|              |                             |                   |
-|              |    rad2.safenet-inc.com     |    69.20.230.201  |
-+--------------+-----------------------------+-------------------+
++-------------------------------------+-----------------------------+-------------------+
+| SafeNet Trusted Access Service Zone |           FQDN              | IP Address        |
++=====================================+=============================+===================+
+|                                     | ::                          | ::                |
+|                                     |                             |                   |
+|                                     |    radius1.eu.safenetid.com |    52.47.114.37   |
+| EU Service Zone                     |                             |                   |
+|                                     | ::                          | ::                |
+|                                     |                             |                   |
+|                                     |    radius2.eu.safenetid.com |    52.47.42.111   |
++-------------------------------------+-----------------------------+-------------------+
+|                                     | ::                          | ::                |
+| US Service Zone                     |                             |                   |
+|                                     |    radius1.us.safenetid.com |    35.196.203.247 |
++-------------------------------------+-----------------------------+-------------------+
+|                                     | ::                          | ::                |
+|                                     |                             |                   |
+|                                     |    radius1.safenet-inc.com  |    109.73.120.148 |
+| Classic Service Zone                |                             |                   |
+|                                     | ::                          | ::                |
+|                                     |                             |                   |
+|                                     |    radius2.safenet-inc.com  |    69.20.230.201  |
++-------------------------------------+-----------------------------+-------------------+
 
 9. Type in your Shared Secret (Same Shared Secret configured in STA Auth Node in :ref:`step 1.7 <step>`) in the **Enter a new shared secret:** field and click :guilabel:`OK`
 
