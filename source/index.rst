@@ -65,7 +65,7 @@ To be able to use RDGW with STA RADIUS, an **Auth Node** has to be created with 
 
 .. _step:
 
-   .. thumbnail:: _images/pic5.png
+.. thumbnail:: _images/pic5.png
 
 5. In **Auth Node Name**, type in any name for this Auth Node, for example *RD Gateway*
 
@@ -90,7 +90,7 @@ RD CAP configuration will create all the required policies in the local NPS serv
 
 .. _step1:
 
-   .. thumbnail:: _images/pic2.png
+.. thumbnail:: _images/pic2.png
 
 
 4. In the RD Gateway Manager, right-click on the server name and expand **Policies**
@@ -101,7 +101,7 @@ RD CAP configuration will create all the required policies in the local NPS serv
 
 .. _step2:
 
-   .. thumbnail:: _images/pic3.png
+.. thumbnail:: _images/pic3.png
 
 7. Select **Central server running NPS**
 
@@ -137,6 +137,6 @@ RD CAP configuration will create all the required policies in the local NPS serv
 
 .. _step3:
 
-   .. thumbnail:: _images/pic4.png
+.. thumbnail:: _images/pic4.png
 
 10. Click :guilabel:`Apply` and :guilabel:`OK` to save the RD CAP settings
