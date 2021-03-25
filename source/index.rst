@@ -67,7 +67,7 @@ To be able to use RDGW with STA RADIUS, an **Auth Node** has to be created with 
 
 6. In **Low IP Address in Range**, type in the Public IP of your RDG server
 
-7. In **Configure FreeRADIUS Synchronization – Shared Secret**, type in a _`step` Shared Secret or click :guilabel:`Generate` to generate a random one (copy and save the shared secret to be used in)
+7. In **Configure FreeRADIUS Synchronization – Shared Secret**, type in a `step`_ Shared Secret or click :guilabel:`Generate` to generate a random one (copy and save the shared secret to be used in)
 
 8. Click :guilabel:`Save` to save the newly created *Auth Node*
 
