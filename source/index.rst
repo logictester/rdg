@@ -307,3 +307,14 @@ A high-level architecture of this alternative deployment model is shown below:
 |                                     |                           |      |
 |                                     |    agent2.safenet-inc.com | 443  |
 +-------------------------------------+---------------------------+------+
+
+
+Appendix B: High Availability
+=============================
+
+Expanding on the deployment architecture shown in :ref:`Appendix A <appendix-a>`, the below diagram shows a high-level architecture aimed at achieving redundancy or high availability in the solution. Here, components are mirrored to a second datacenter or zone and configured to communicate to two (2) RDG, NPS and so on. If one service is not available, another service is requested.
+High availability in SafeNet Trusted Access (STA) is ensured by the service provider (Thales) as long as the customer configures FQDN’s instead of IP address in directing traffic to the STA virtual server.
+
+.. _ha:
+
+.. thumbnail:: _images/pic16.png
