@@ -48,7 +48,32 @@ The high level target architecture is shown below. The user requests a remote de
    Please see Appendix A for additional deployment options, using an on-premise NPS server with STA NPS Agent installed
 
 
-Step 1: Configure RD CAP policy
+Step 1: Configure STA Auth Node for RDGW
+========================================
+
+To be able to use RDGW with STA RADIUS, an Auth Node has to be created with the Public IP of the RDG server. To do so:
+
+1. Open STA (MFA Management Console)
+
+2. Navigate to Comms tab
+
+3. Scroll down to Auth Nodes and click on Auth Nodes
+
+4. Click Add to add a new Auth Node:
+
+   .. thumbnail:: _images/pic5.png 
+
+5. In Auth Node Name, type in any name for this Auth Node, for example RD Gateway
+
+6. In Low IP Address in Range, type in the Public IP of your RDG server
+
+7. In Configure FreeRADIUS Synchronization – Shared Secret, type in the same Shared Secret that was created in the RD CAP configuration in step ‎9
+
+8. Click Save to save the newly created Auth Node.
+
+
+
+Step 2: Configure RD CAP policy
 ===============================
 
 #. Open Server Manager and click on :guilabel:`Remote Desktop Services`
