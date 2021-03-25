@@ -82,28 +82,30 @@ Step 2: Configure RD CAP policy
 
 RD CAP configuration will create all the required policies in the local NPS server to allow forwarding of the RADIUS requests to the STA Cloud RADIUS. To do so:
 
-#. Open Server Manager and click on :guilabel:`Remote Desktop Services`
+1. Open Server Manager and click on :guilabel:`Remote Desktop Services`
 
-#. In the Remote Desktop Services, click on :guilabel:`Servers`
+2. In the Remote Desktop Services, click on :guilabel:`Servers`
 
-#. Right click your server and select **RD Gateway Manager**:
+3. Right click your server and select **RD Gateway Manager**:
 
 .. _step1:
 
    .. thumbnail:: _images/pic2.png
 
 
-#. In the RD Gateway Manager, right-click on the server name and expand **Policies**
+4. In the RD Gateway Manager, right-click on the server name and expand **Policies**
 
-#. Click on :guilabel:`Central Network Policy Servers`
+5. Click on :guilabel:`Central Network Policy Servers`
 
-#. Click on :guilabel:`Configure Central RD CAP`, server properties opens, click on :guilabel:`RD CAP Store`:
+6. Click on :guilabel:`Configure Central RD CAP`, server properties opens, click on :guilabel:`RD CAP Store`:
+
+.. _step2:
 
    .. thumbnail:: _images/pic3.png
 
-#. Select **Central server running NPS**
+7. Select **Central server running NPS**
 
-#. Type in the RADIUS server FQDN or IP (see reference below) in the **Enter a name or IP address for the server running NPS:** field and click :guilabel:`Add`
+8. Type in the RADIUS server FQDN or IP (see reference below) in the **Enter a name or IP address for the server running NPS:** field and click :guilabel:`Add`
 
 .. note:: Depending on your service zone select the appropriate FQDN or IP address (FQDN is preferred):
 
@@ -132,6 +134,8 @@ RD CAP configuration will create all the required policies in the local NPS serv
 +--------------+-----------------------------+-------------------+
 
 9. Type in your Shared Secret (Same Shared Secret configured in STA Auth Node in :ref:`step 1.7 <step>`) in the **Enter a new shared secret:** field and click :guilabel:`OK`
+
+.. _step3:
 
    .. thumbnail:: _images/pic4.png
 
