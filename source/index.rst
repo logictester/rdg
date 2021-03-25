@@ -147,7 +147,7 @@ RD CAP configuration will create all the required policies in the local NPS serv
 Step 3: Adjust NPS Policies and Settings
 ========================================
 
-The configuration RD CAP Policy creates the necessary policies and settings in NPS, those policies and settings need to be adjusted to allow Push Authentication to work correctly. To do so:
+The configuration of the RD CAP Policy creates the necessary policies and settings in NPS, those policies and settings need to be adjusted to allow Push Authentication to work correctly. To do so:
 
 1.	Open NPS and expand **RADIUS Clients and Servers**
 
@@ -162,3 +162,52 @@ The configuration RD CAP Policy creates the necessary policies and settings in N
 6.	Click on :guilabel:`Load Balancing`
 
 7.	Adjust the value of: **Number of seconds without response before request is considered dropped:** and **Number of seconds between requests when the server is identified as unavailable:** to **60** (to allow enough time for the Push Authentication to complete):
+
+.. _nps:
+
+.. thumbnail:: _images/pic6.png
+
+8.	Click :guilabel:`OK` to save the timeout settings and :guilabel:`Apply` and :guilabel:`OK` to save the RADIUS Server settings
+
+9.	Expand **Policies** and click on :guilabel:`Connection Request Policies`
+
+10.	A policy named **TS GATEWAY AUTHORIZATION POLICY** will be available (created by RD CAP)
+
+11.	Double click to open the policy
+
+12.	Click on :guilabel:`Conditions` and adjust the conditions based on the company needs (for example Group Membership or Date and Time restrictions)
+
+13.	Click on :guilabel:`Settings` and click on :guilabel:`Authentication`, verify **Forward requests to the following remote RADIUS server group for authentication: TS GATEWAY SERVER GROUP** is selected:
+
+.. _tsgroup:
+
+.. thumbnail:: _images/pic7.png
+
+.. note:: By default, RDG will send the username in DOMAIN\User format, if STA user doesn’t have a username or an alias in the same format, the authentication will fail. To overcome this, UPN stripping is required, please see the steps below to configure attribute manipulation rule to adjust the username
+
+14.	Click on :guilabel:`Attribute`
+
+15.	Change the Attribute to be adjusted to **User-Name**
+
+16.	Click :guilabel:`Add` to add a new **Attribute Manipulation Rule**
+
+17.	In **Find:** filed type: ::
+
+                                (.*)\\(.*)
+
+    and in **Replace:** field type ::
+
+                                      $2
+
+18.	Click :guilabel:`OK` to save the Attribute settings and :guilabel:`Apply` and :guilabel:`OK` to save the Connection Policy:
+
+.. _policy:
+
+.. thumbnail:: _images/pic8.png
+
+
+19.	Click on :guilabel:`Network Policies`
+
+20.	Review and adjust the policy as required and then close NPS.
+
+The RDG server side configurations are complete.
