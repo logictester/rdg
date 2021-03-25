@@ -63,9 +63,9 @@ To be able to use RDGW with STA RADIUS, an **Auth Node** has to be created with 
 
 4. Click :guilabel:`Add` to add a new **Auth Node**:
 
-.. _step:
-
 .. thumbnail:: _images/pic5.png
+
+.. _step:
 
 5. In **Auth Node Name**, type in any name for this Auth Node, for example *RD Gateway*
 
@@ -90,6 +90,7 @@ RD CAP configuration will create all the required policies in the local NPS serv
 
 .. _rdg:
 
+
 .. thumbnail:: _images/pic2.png
 
 
@@ -100,6 +101,7 @@ RD CAP configuration will create all the required policies in the local NPS serv
 6. Click on :guilabel:`Configure Central RD CAP`, server properties opens, click on :guilabel:`RD CAP Store`:
 
 .. _cap:
+
 
 .. thumbnail:: _images/pic3.png
 
@@ -133,9 +135,9 @@ RD CAP configuration will create all the required policies in the local NPS serv
 |                                     |    radius2.safenet-inc.com  |    69.20.230.201  |
 +-------------------------------------+-----------------------------+-------------------+
 
-9. Type in your Shared Secret (Same Shared Secret configured in STA Auth Node in :ref:`step 1.7 <step>`) in the **Enter a new shared secret:** field and click :guilabel:`OK`
-
 .. _secret:
+
+9. Type in your **Shared Secret** (same **Shared Secret** configured in STA Auth Node in :ref:`step 1.7 <step>`) in the **Enter a new shared secret:** field and click :guilabel:`OK`
 
 .. thumbnail:: _images/pic4.png
 
