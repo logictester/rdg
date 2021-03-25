@@ -88,7 +88,7 @@ RD CAP configuration will create all the required policies in the local NPS serv
 
 3. Right click your server and select **RD Gateway Manager**:
 
-.. _step1:
+.. _a1:
 
 .. thumbnail:: _images/pic2.png
 
@@ -99,7 +99,7 @@ RD CAP configuration will create all the required policies in the local NPS serv
 
 6. Click on :guilabel:`Configure Central RD CAP`, server properties opens, click on :guilabel:`RD CAP Store`:
 
-.. _step2:
+.. _b2:
 
 .. thumbnail:: _images/pic3.png
 
@@ -135,7 +135,7 @@ RD CAP configuration will create all the required policies in the local NPS serv
 
 9. Type in your Shared Secret (Same Shared Secret configured in STA Auth Node in :ref:`step 1.7 <step>`) in the **Enter a new shared secret:** field and click :guilabel:`OK`
 
-.. _step3:
+.. _c3:
 
 .. thumbnail:: _images/pic4.png
 
