@@ -318,3 +318,94 @@ High availability in SafeNet Trusted Access (STA) is ensured by the service prov
 .. _ha:
 
 .. thumbnail:: _images/pic16.png
+
+
+Appendix C: Troubleshooting
+===========================
+
+Test and Troubleshooting Tools
+******************************
+
+If possible, download the following tools to the servers involved in your RDGW and STA architecture:
+
+.. _ntradping:
+
+**NTRadPing** - You can download NTRadPing :download:`here <_downloads/ntradping.zip>`
+
+.. _wireshark:
+
+**Wireshark** - You can download Wireshark `here <https://www.wireshark.org/download.html>`_
+
+Command Reference
+*****************
+
+The following commands are used from command line (CMD) to more rapidly recycle the NPS service :
+
++----------------------------------+---------------------+-------------------------------------------------------------+
+| Command                          | Description         | Message                                                     |
++----------------------------------+---------------------+-------------------------------------------------------------+
+| ::                               |                     |                                                             |
+|                                  |                     | The Network Policy Server service is stopping...            |
+|    net stop ias                  | Stop NPS Service    |                                                             |
+|                                  |                     | The Network Policy Server service was stopped successfully. |
++----------------------------------+---------------------+-------------------------------------------------------------+
+| ::                               |                     |                                                             |
+|                                  |                     | The Network Policy Server service is starting.              |
+|    net start ias                 | Start NPS Service   |                                                             |
+|                                  |                     | The Network Policy Server service was started successfully. |
++----------------------------------+---------------------+-------------------------------------------------------------+
+| ::                               |                     | The Network Policy Server service is stopping...            |
+|                                  |                     |                                                             |
+|    net stop ias && net start ias | Restart NPS Service | The Network Policy Server service was stopped successfully. |
+|                                  |                     |                                                             |
+|                                  |                     | The Network Policy Server service is starting.              |
+|                                  |                     |                                                             |
+|                                  |                     | The Network Policy Server service was started successfully. |
++----------------------------------+---------------------+-------------------------------------------------------------+
+
+Common Issues
+*************
+
+Missing or wrongly defined Auth Node
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Whether you configure NPS to communicate directly to SafeNet Trusted Access (STA) over RADIUS (UDP 1812) or you employ the SafeNet Agent for NPS to communicate to STA over TLS (443) you must define an Auth Node in in the virtual server corresponding to the external IP address of your server. Verify that IP using an online tool such as https://www.whatsmyip.org/ or by executing the following command in command line (CMD)
+
+  ::
+
+     curl ifconfig.me
+
+
+Proxy impedes communication
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Open a command line window (CMD) and execute the following command to learn if a proxy is present:
+
+  ::
+
+     netsh winhttp show proxy
+
+Set requests to inherit any proxy configuration from Internet Explorer settings:
+
+  ::
+
+     netsh winhttp import proxy source = ie
+
+Firewall impedes communication
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Install Wireshark (:ref:`see above <wireshark>`) and run a capture when attempting a connection.
+
+To simplify: run the test using NTRadPing (:ref:`see above <ntradping>`) first and if it is successful only then move on to include actual components. A successful connection will appear as below. An unsuccessful connection will likely fail following resolving the STA FQDNs to IP addresses (follow TCP stream and it will show reconnection attempts):
+
+Succesful attmpt:
+
+.. _noerror:
+
+.. thumbnail:: _images/pic17.png
+
+Failed attempt:
+
+.. _error:
+
+.. thumbnail:: _images/pic18.png
