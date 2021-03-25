@@ -74,33 +74,32 @@ Step 1: Configure RD CAP policy
 
 .. note:: Depending on your service zone select the appropriate FQDN or IP address (FQDN is preferred):
 
++--------------+-----------------------------+-------------------+
+| Service Zone |            FQDN             |     IP Address    |
++--------------+-----------------------------+-------------------+
+|              | ::                          | ::                |
+|              |                             |                   |
+|              |    radius1.eu.safenetid.com |    52.47.114.37   |
+| EU           |                             |                   |
+|              | ::                          | ::                |
+|              |                             |                   |
+|              |    radius2.eu.safenetid.com |    52.47.42.111   |
++--------------+-----------------------------+-------------------+
+|              | ::                          | ::                |
+| US           |                             |                   |
+|              |    radius1.us.safenetid.com |    35.196.203.247 |
++--------------+-----------------------------+-------------------+
+|              | ::                          | ::                |
+|              |                             |                   |
+|              |    rad1.safenet-inc.com     |    109.73.120.148 |
+| Classic      |                             |                   |
+|              | ::                          | ::                |
+|              |                             |                   |
+|              |    rad2.safenet-inc.com     |    69.20.230.201  |
++--------------+-----------------------------+-------------------+
 
-        +--------------+-----------------------------+-------------------+
-        | Service Zone |            FQDN             |     IP Address    |
-        +--------------+-----------------------------+-------------------+
-        |              | ::                          | ::                |
-        |              |                             |                   |
-        |              |    radius1.eu.safenetid.com |    52.47.114.37   |
-        | EU           |                             |                   |
-        |              | ::                          | ::                |
-        |              |                             |                   |
-        |              |    radius2.eu.safenetid.com |    52.47.42.111   |
-        +--------------+-----------------------------+-------------------+
-        |              | ::                          | ::                |
-        | US           |                             |                   |
-        |              |    radius1.us.safenetid.com |    35.196.203.247 |
-        +--------------+-----------------------------+-------------------+
-        |              | ::                          | ::                |
-        |              |                             |                   |
-        |              |    rad1.safenet-inc.com     |    109.73.120.148 |
-        | Classic      |                             |                   |
-        |              | ::                          | ::                |
-        |              |                             |                   |
-        |              |    rad2.safenet-inc.com     |    69.20.230.201  |
-        +--------------+-----------------------------+-------------------+
-
-#. Type in your Shared Secret (Same Shared Secret configured in STA Auth Node in step 3.7) in the **Enter a new shared secret:** field and click :guilabel:`OK`
+9. Type in your Shared Secret (Same Shared Secret configured in STA Auth Node in step 3.7) in the **Enter a new shared secret:** field and click :guilabel:`OK`
 
    .. thumbnail:: _images/pic4.png
 
-#. Click :guilabel:`Apply` and :guilabel:`OK` to save the RD CAP settings
+10. Click :guilabel:`Apply` and :guilabel:`OK` to save the RD CAP settings
