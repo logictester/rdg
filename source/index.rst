@@ -142,3 +142,23 @@ RD CAP configuration will create all the required policies in the local NPS serv
 .. thumbnail:: _images/pic4.png
 
 10. Click :guilabel:`Apply` and :guilabel:`OK` to save the RD CAP settings
+
+
+Step 3: Adjust NPS Policies and Settings
+========================================
+
+The configuration RD CAP Policy creates the necessary policies and settings in NPS, those policies and settings need to be adjusted to allow Push Authentication to work correctly. To do so:
+
+1.	Open NPS and expand **RADIUS Clients and Servers**
+
+2.	Click on :guilabel:`Remote RADIUS Server`
+
+3.	A policy named **TS GATEWAY SERVER GROUP** will be available (created by RD CAP)
+
+4.	Double-click to open the policy
+
+5.	Select the RADIUS server (created by RD CAP) and click on :guilabel:`Edit`, the **Edit RADIUS Server** window opens
+
+6.	Click on :guilabel:`Load Balancing`
+
+7.	Adjust the value of: **Number of seconds without response before request is considered dropped:** and **Number of seconds between requests when the server is identified as unavailable:** to **60** (to allow enough time for the Push Authentication to complete):
