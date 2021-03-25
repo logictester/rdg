@@ -72,9 +72,10 @@ Step 1: Configure RD CAP policy
 
 #. Type in the RADIUS server FQDN or IP (see reference below) in the **Enter a name or IP address for the server running NPS:** field and click :guilabel:`Add`
 
-.. note::
+.. note:: Depending on your service zone select the appropriate FQDN or IP (FQDN is preferred):
 
-   Depending on your service zone select the appropriate FQDN or IP (FQDN is preferred):
+ .. table::
+    :align: center
 
   +--------------+-----------------------------+-------------------+
   | Service Zone |            FQDN             |     IP Address    |
