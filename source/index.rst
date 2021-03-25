@@ -211,3 +211,57 @@ The configuration of the RD CAP Policy creates the necessary policies and settin
 20.	Review and adjust the policy as required and then close NPS.
 
 The RDG server side configurations are complete.
+
+
+Step 4: Test the configuration
+==============================
+
+To test the configuration, adjust the RDP connection to use RD Gateway. The connection flow will first establish a connection to the RDG which will prompt the user to authenticate using domain username and password (if the credentials haven’t been saved yet) and send a Push Authentication to the user’s MobilePASS+ token, after successful Push Authentication, the user will be connected to the remote desktop. Depending on the RDP configuration, the user might be prompted for the credentials for the Remote Desktop or SSO can be used so the same credentials provided during the connection to RDG will be used for the Remote Desktop as well (Configured in Remote Desktop Services – Deployment Properties).
+
+.. _mstsc:
+
+.. thumbnail:: _images/pic10.png
+
+1.	Open RDP (mstsc)
+
+2.	Click on :guilabel:`Advanced`
+
+3.	Under Connect from Anywhere click on :guilabel:`Settings`
+
+4.	Click on :guilabel:`Use these RD Gateway server settings:`
+
+5.	In **Server Name**, type in the FQDN of your RDG server
+
+6.	Adjust the **Log-on method** and **Bypass RD Gateway server for local addresses** as required:
+
+.. _mstsc_server:
+
+.. thumbnail:: _images/pic11.png
+
+7.	Click :guilabel:`OK` to save the settings
+
+8.	Click :guilabel:`Connect` to initiate the RDP connection through RD Gateway
+
+9.	The user is asked to provide the domain credentials (if the credentials haven’t been previously saved)
+
+.. _mstsc_connection:
+
+.. thumbnail:: _images/pic12.png
+
+10.	After providing the credentials, the connection initiates:
+
+.. _mstsc_connect:
+
+.. thumbnail:: _images/pic13.png
+
+11. The user receives and approves the Push Authentication request:
+
+.. _push:
+
+.. thumbnail:: _images/pic9.png
+
+12. After approving the Push Authentication request, the connection is established:
+
+.. _connection:
+
+.. thumbnail:: _images/pic14.png
