@@ -71,7 +71,7 @@ To be able to use RDGW with STA RADIUS, an **Auth Node** has to be created with 
 
 6. In **Low IP Address in Range**, type in the Public IP of your RDG server
 
-7. In **Configure FreeRADIUS Synchronization – Shared Secret**, type in a Shared Secret or click :guilabel:`Generate` to generate a random one (copy and save the shared secret to be used in :ref:`step 2.9 <c>`)
+7. In **Configure FreeRADIUS Synchronization – Shared Secret**, type in a Shared Secret or click :guilabel:`Generate` to generate a random one (copy and save the shared secret to be used in :ref:`step 2.9 <secret>`)
 
 8. Click :guilabel:`Save` to save the newly created *Auth Node*
 
@@ -88,7 +88,7 @@ RD CAP configuration will create all the required policies in the local NPS serv
 
 3. Right click your server and select **RD Gateway Manager**:
 
-.. _a:
+.. _rdg:
 
 .. thumbnail:: _images/pic2.png
 
@@ -99,7 +99,7 @@ RD CAP configuration will create all the required policies in the local NPS serv
 
 6. Click on :guilabel:`Configure Central RD CAP`, server properties opens, click on :guilabel:`RD CAP Store`:
 
-.. _b:
+.. _cap:
 
 .. thumbnail:: _images/pic3.png
 
@@ -135,7 +135,7 @@ RD CAP configuration will create all the required policies in the local NPS serv
 
 9. Type in your Shared Secret (Same Shared Secret configured in STA Auth Node in :ref:`step 1.7 <step>`) in the **Enter a new shared secret:** field and click :guilabel:`OK`
 
-.. _c:
+.. _secret:
 
 .. thumbnail:: _images/pic4.png
 
