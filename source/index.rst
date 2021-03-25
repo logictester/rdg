@@ -265,3 +265,38 @@ To test the configuration, adjust the RDP connection to use RD Gateway. The conn
 .. _connection:
 
 .. thumbnail:: _images/pic14.png
+
+
+Appendix A: Deployment Options
+==============================
+
+The deployment demonstrated in this guide is based on RADIUS communication between Microsoft Network Policy Server (NPS) and SafeNet Trusted Access (STA). Moreover, the suggested model uses a single NPS instance.
+It is also possible to deploy this solution using an additional NPS instance together with the SafeNet NPS Agent. In this deployment model, the RDGW NPS communicates locally to an additional NPS using RADIUS and acting as a client, and the STA NPS Agent then communicates to STA using HTTPS (443).
+
+.. note:: The approach may be favorable when the first NPS instance is not allowed internet access or when RADIUS over the internet is not desired.
+
+A high-level architecture of this alternative deployment model is shown below:
+
+.. _2nps:
+
+.. thumbnail:: _images/pic15.png
+
++-------------------------------------+---------------------------+------+
+| SafeNet Trusted Access Service Zone |           FQDN            | Port |
++-------------------------------------+---------------------------+------+
+|                                     | ::                        |      |
+|                                     |                           |      |
+| EU Service Zone                     |    cloud.eu.safenetid.com | 443  |
++-------------------------------------+---------------------------+------+
+|                                     | ::                        |      |
+|                                     |                           |      |
+| US Service Zone                     |    cloud.us.safenetid.com | 443  |
++-------------------------------------+---------------------------+------+
+|                                     | ::                        |      |
+|                                     |                           |      |
+|                                     |    agent1.safenet-inc.com | 443  |
+| Classic Service Zone                |                           |      |
+|                                     | ::                        |      |
+|                                     |                           |      |
+|                                     |    agent2.safenet-inc.com | 443  |
++-------------------------------------+---------------------------+------+
