@@ -74,8 +74,6 @@ Step 1: Configure RD CAP policy
 
 .. note:: Depending on your service zone select the appropriate FQDN or IP (FQDN is preferred):
 
-.. table::
-   :align: center
 
 +--------------+-----------------------------+-------------------+
 | Service Zone |            FQDN             |     IP Address    |
