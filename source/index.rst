@@ -88,6 +88,8 @@ RD CAP configuration will create all the required policies in the local NPS serv
 
 #. Right click your server and select **RD Gateway Manager**:
 
+.. _step1:
+
    .. thumbnail:: _images/pic2.png
 
 
