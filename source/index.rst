@@ -297,6 +297,7 @@ A high-level architecture of this alternative deployment model is shown below:
 |                                     |    agent1.safenet-inc.com | 443  |
 | Classic Service Zone                |                           |      |
 |                                     | ::                        |      |
+|                                     |                           +------+
 |                                     |                           |      |
 |                                     |    agent2.safenet-inc.com | 443  |
 +-------------------------------------+---------------------------+------+
