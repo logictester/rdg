@@ -67,6 +67,8 @@ To be able to use RDGW with STA RADIUS, an **Auth Node** has to be created with 
 
 6. In **Low IP Address in Range**, type in the Public IP of your RDG server
 
+.. _step:
+
 7. In **Configure FreeRADIUS Synchronization – Shared Secret**, type in a Shared Secret or click :guilabel:`Generate` to generate a random one (copy and save the shared secret to be used in)
 
 8. Click :guilabel:`Save` to save the newly created *Auth Node*
@@ -75,6 +77,8 @@ To be able to use RDGW with STA RADIUS, an **Auth Node** has to be created with 
 
 Step 2: Configure RD CAP policy
 ===============================
+
+RD CAP configuration will create all the required policies in the local NPS server to allow forwarding of the RADIUS requests to the STA Cloud RADIUS. To do so:
 
 #. Open Server Manager and click on :guilabel:`Remote Desktop Services`
 
@@ -123,7 +127,7 @@ Step 2: Configure RD CAP policy
 |              |    rad2.safenet-inc.com     |    69.20.230.201  |
 +--------------+-----------------------------+-------------------+
 
-9. Type in your Shared Secret (Same Shared Secret configured in STA Auth Node in step 3.7) in the **Enter a new shared secret:** field and click :guilabel:`OK`
+9. Type in your Shared Secret (Same Shared Secret configured in STA Auth Node in :ref:`step 1.7 <step>`) in the **Enter a new shared secret:** field and click :guilabel:`OK`
 
    .. thumbnail:: _images/pic4.png
 
