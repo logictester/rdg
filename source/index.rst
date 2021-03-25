@@ -45,7 +45,7 @@ The high level target architecture is shown below. The user requests a remote de
 
 .. note::
 
-   Please see Appendix A for additional deployment options, using an on-premise NPS server with STA NPS Agent installed
+   Please see :ref:`Appendix A <appendix-a>` for additional deployment options, using an on-premise NPS server with STA NPS Agent installed
 
 
 
@@ -267,6 +267,8 @@ To test the configuration, adjust the RDP connection to use RD Gateway. The conn
 .. thumbnail:: _images/pic14.png
 
 
+.. _appendix-a:
+
 Appendix A: Deployment Options
 ==============================
 
@@ -280,6 +282,10 @@ A high-level architecture of this alternative deployment model is shown below:
 .. _2nps:
 
 .. thumbnail:: _images/pic15.png
+
+
+.. note:: Depending on your service zone select the appropriate FQDN or IP address to configure the STA NPS Agent (FQDN is preferred):
+
 
 +-------------------------------------+---------------------------+------+
 | SafeNet Trusted Access Service Zone |           FQDN            | Port |
