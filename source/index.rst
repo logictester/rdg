@@ -48,6 +48,8 @@ The high level target architecture is shown below. The user requests a remote de
    Please see Appendix A for additional deployment options, using an on-premise NPS server with STA NPS Agent installed
 
 
+
+
 Step 1: Configure STA Auth Node for RDGW
 ========================================
 
@@ -61,13 +63,13 @@ To be able to use RDGW with STA RADIUS, an **Auth Node** has to be created with 
 
 4. Click :guilabel:`Add` to add a new **Auth Node**:
 
+.. _step:
+
    .. thumbnail:: _images/pic5.png
 
 5. In **Auth Node Name**, type in any name for this Auth Node, for example *RD Gateway*
 
 6. In **Low IP Address in Range**, type in the Public IP of your RDG server
-
-.. _step:
 
 7. In **Configure FreeRADIUS Synchronization – Shared Secret**, type in a Shared Secret or click :guilabel:`Generate` to generate a random one (copy and save the shared secret to be used in)
 
