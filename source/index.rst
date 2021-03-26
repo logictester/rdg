@@ -450,7 +450,7 @@ Install Wireshark (:ref:`see above <wireshark>`) and run a capture when attempti
 
 To simplify: run the test using NTRadPing (:ref:`see above <ntradping>`) first and if it is successful only then move on to include actual components. A successful connection will appear as below. An unsuccessful connection will likely fail following resolving the STA FQDNs to IP addresses (follow TCP stream and it will show reconnection attempts):
 
-*Succesful attempt:*
+*Successful attempt:*
 
 .. _noerror:
 
