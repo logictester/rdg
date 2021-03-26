@@ -47,7 +47,7 @@ The high level target architecture is shown below. The user requests a remote de
    :title: Figure: Architecture diagram.
    :show_caption: true
 
-
+|
 
 .. note::
 
