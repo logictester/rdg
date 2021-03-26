@@ -154,11 +154,12 @@ RD CAP configuration will create all the required policies in the local NPS serv
    .. thumbnail:: _images/setSharedSecret.png
       :width: 80%
       :align: center
+
       :title: Figure: Set the RADIUS shared secret.
 
 |
 
-10. Click :guilabel:`Apply` and :guilabel:`OK` to save the RD CAP settings
+ 10. Click :guilabel:`Apply` and :guilabel:`OK` to save the RD CAP settings
 
 
 Step 3: Adjust NPS Policies and Settings
