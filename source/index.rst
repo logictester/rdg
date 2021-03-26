@@ -41,7 +41,9 @@ Solution Architecture
 
 The high level target architecture is shown below. The user requests a remote desktop service and inputs their username and domain password. The access-request is intercepted by RDGW policy and forwarded to SafeNet Trusted Access (STA) over RADIUS (UDP 1812) via Microsoft NPS. STA then sends an OTP Push notification to the requesting user’s mobile device. The user approves the push request and is authorized to the remote desktop service.
 
-.. thumbnail:: _images/pic1.png
+.. thumbnail:: /images/freeradius/evolynxRadiusLoadTest.png
+   :title: Figure: Architecture diagram.
+   :show_caption: true
 
 .. note::
 
@@ -63,7 +65,9 @@ To be able to use RDGW with STA RADIUS, an **Auth Node** has to be created with 
 
 4. Click :guilabel:`Add` to add a new **Auth Node**:
 
-.. thumbnail:: _images/pic5.png
+   .. thumbnail:: /images/addingAuthNode.png
+      :width: 80%   
+      :title: Figure: Adding an Auth Node.
 
 .. _step:
 
