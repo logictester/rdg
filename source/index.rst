@@ -148,7 +148,7 @@ RD CAP configuration will create all the required policies in the local NPS serv
 
 9. Type in your **Shared Secret** (same **Shared Secret** configured in STA Auth Node in :ref:`step 1.7 <step>`) in the **Enter a new shared secret:** field and click :guilabel:`OK`
 
-   .. thumbnail:: _images/setSharedSecret.png.png
+   .. thumbnail:: _images/setSharedSecret.png
       :width: 80%
       :title: Figure: Set the RADIUS shared secret.
 
