@@ -47,6 +47,8 @@ The high level target architecture is shown below. The user requests a remote de
    :title: Figure: Architecture diagram.
    :show_caption: true
 
+
+
 .. note::
 
    Please see :ref:`Appendix A <appendix-a>` for additional deployment options, using an on-premise NPS server with STA NPS Agent installed
