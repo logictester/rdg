@@ -43,7 +43,7 @@ The high level target architecture is shown below. The user requests a remote de
 
 .. _architecture:
 
-.. thumbnail:: _images/pic1.png
+.. thumbnail:: _images/architecture.png
    :title: Figure: Architecture diagram.
    :show_caption: true
 
@@ -94,13 +94,13 @@ RD CAP configuration will create all the required policies in the local NPS serv
 
 2. In the Remote Desktop Services, click on :guilabel:`Servers`
 
-3. Right click your server and select **RD Gateway Manager**:
+3. Right-click your server and select **RD Gateway Manager**:
 
 .. _rdg:
 
-
-.. thumbnail:: _images/pic2.png
-
+   .. thumbnail:: _images/selectRDGWManager.png
+      :width: 80%
+      :title: Figure: Right-click to select RD Gateway Manager.
 
 4. In the RD Gateway Manager, right-click on the server name and expand **Policies**
 
@@ -110,8 +110,9 @@ RD CAP configuration will create all the required policies in the local NPS serv
 
 .. _cap:
 
-
-.. thumbnail:: _images/pic3.png
+   .. thumbnail:: _images/configureRDCAPStore.png
+      :width: 80%
+      :title: Figure: Configure RD CAP Store.
 
 7. Select **Central server running NPS**
 
@@ -147,7 +148,9 @@ RD CAP configuration will create all the required policies in the local NPS serv
 
 9. Type in your **Shared Secret** (same **Shared Secret** configured in STA Auth Node in :ref:`step 1.7 <step>`) in the **Enter a new shared secret:** field and click :guilabel:`OK`
 
-.. thumbnail:: _images/pic4.png
+   .. thumbnail:: _images/setSharedSecret.png.png
+      :width: 80%
+      :title: Figure: Set the RADIUS shared secret.
 
 10. Click :guilabel:`Apply` and :guilabel:`OK` to save the RD CAP settings
 
@@ -173,7 +176,9 @@ The configuration of the RD CAP Policy creates the necessary policies and settin
 
 .. _nps:
 
-.. thumbnail:: _images/pic6.png
+   .. thumbnail:: _images/setRequestTimeout.png
+      :width: 80%
+      :title: Figure: Set request timeout to accomodate Push OTP.
 
 8.	Click :guilabel:`OK` to save the timeout settings and :guilabel:`Apply` and :guilabel:`OK` to save the RADIUS Server settings
 
@@ -189,7 +194,9 @@ The configuration of the RD CAP Policy creates the necessary policies and settin
 
 .. _tsgroup:
 
-.. thumbnail:: _images/pic7.png
+   .. thumbnail:: _images/setGroup.png
+      :width: 80%
+      :title: Figure: Verify/set correct group.
 
 .. note:: By default, RDG will send the username in DOMAIN\User format, if STA user doesn’t have a username or an alias in the same format, the authentication will fail. To overcome this, UPN stripping is required, please see the steps below to configure attribute manipulation rule to adjust the username
 
@@ -211,8 +218,9 @@ The configuration of the RD CAP Policy creates the necessary policies and settin
 
 .. _policy:
 
-.. thumbnail:: _images/pic8.png
-
+   .. thumbnail:: _images/setAttribute.png
+      :width: 80%
+      :title: Figure: Adding attribute(s).
 
 19.	Click on :guilabel:`Network Policies`
 
@@ -228,7 +236,9 @@ To test the configuration, adjust the RDP connection to use RD Gateway. The conn
 
 .. _mstsc:
 
-.. thumbnail:: _images/pic10.png
+   .. thumbnail:: _images/setDeploymentParameters.png
+      :width: 80%
+      :title: Figure: Setting deployment parameters prior test.
 
 1.	Open RDP (mstsc)
 
@@ -244,7 +254,9 @@ To test the configuration, adjust the RDP connection to use RD Gateway. The conn
 
 .. _mstsc_server:
 
-.. thumbnail:: _images/pic11.png
+   .. thumbnail:: _images/adjustingLoginMethod.png
+      :width: 80%
+      :title: Figure: Adjusting RPP login.
 
 7.	Click :guilabel:`OK` to save the settings
 
@@ -254,27 +266,34 @@ To test the configuration, adjust the RDP connection to use RD Gateway. The conn
 
 .. _mstsc_connection:
 
-.. thumbnail:: _images/pic12.png
+   .. thumbnail:: _images/windowsPassword.png
+      :width: 80%
+      :title: Figure: Providing Widows password as first factor.
 
 10.	After providing the credentials, the connection initiates:
 
 .. _mstsc_connect:
 
-.. thumbnail:: _images/pic13.png
+
+   .. thumbnail:: _images/connectingRDP.png
+      :width: 80%
+      :title: Figure: RDP connection being established.
 
 11. The user receives and approves the Push Authentication request:
 
 .. _push:
 
-.. thumbnail:: _images/pic9.png
-
+   .. thumbnail:: _images/approvingPush.png
+      :width: 80%
+      :title: Figure: Approving Push OTP on MobilePASS+.
 
 12. After approving the Push Authentication request, the connection is established:
 
 .. _connection:
 
-.. thumbnail:: _images/pic14.png
-
+   .. thumbnail:: _images/connectingRDPCont.png
+      :width: 80%
+      :title: Figure: Connection is finalized / established.
 
 .. _appendix-a:
 
@@ -290,8 +309,11 @@ A high-level architecture of this alternative deployment model is shown below:
 
 .. _2nps:
 
-.. thumbnail:: _images/pic15.png
+.. thumbnail:: _images/alternativeArchitecture.png
+   :title: Figure: alternative deployment architecture.
+   :show_caption: true
 
+|
 
 .. note:: Depending on your service zone select the appropriate FQDN or IP address to configure the STA NPS Agent (FQDN is preferred):
 
@@ -326,7 +348,12 @@ High availability in SafeNet Trusted Access (STA) is ensured by the service prov
 
 .. _ha:
 
-.. thumbnail:: _images/pic16.png
+
+.. thumbnail:: _images/alternativeArchitectureHA.png
+   :title: Figure: alternative deployment architecture with High Availability.
+   :show_caption: true
+
+|
 
 
 Appendix C: Troubleshooting
@@ -411,10 +438,16 @@ Succesful attmpt:
 
 .. _noerror:
 
-.. thumbnail:: _images/pic17.png
+
+.. thumbnail:: _images/wiresharkConnectionSuccess.png
+   :title: Figure: Successful connection shown in Wireshark.
+   :show_caption: true
 
 Failed attempt:
 
 .. _error:
 
-.. thumbnail:: _images/pic18.png
+
+.. thumbnail:: _images/wiresharkConnectionFail.png
+   :title: Figure: Unsuccessful connection shown in Wireshark.
+   :show_caption: true
