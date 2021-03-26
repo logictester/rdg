@@ -71,6 +71,7 @@ To be able to use RDGW with STA RADIUS, an **Auth Node** has to be created with 
 
    .. thumbnail:: _images/addingAuthNode.png
       :width: 80%
+      :align: center
       :title: Figure: Adding an Auth Node.
 
 .. _step:
@@ -100,6 +101,7 @@ RD CAP configuration will create all the required policies in the local NPS serv
 
    .. thumbnail:: _images/selectRDGWManager.png
       :width: 80%
+      :align: center
       :title: Figure: Right-click to select RD Gateway Manager.
 
 4. In the RD Gateway Manager, right-click on the server name and expand **Policies**
@@ -112,6 +114,7 @@ RD CAP configuration will create all the required policies in the local NPS serv
 
    .. thumbnail:: _images/configureRDCAPStore.png
       :width: 80%
+      :align: center
       :title: Figure: Configure RD CAP Store.
 
 7. Select **Central server running NPS**
@@ -150,7 +153,10 @@ RD CAP configuration will create all the required policies in the local NPS serv
 
    .. thumbnail:: _images/setSharedSecret.png
       :width: 80%
+      :align: center
       :title: Figure: Set the RADIUS shared secret.
+
+|
 
 10. Click :guilabel:`Apply` and :guilabel:`OK` to save the RD CAP settings
 
@@ -178,6 +184,7 @@ The configuration of the RD CAP Policy creates the necessary policies and settin
 
    .. thumbnail:: _images/setRequestTimeout.png
       :width: 80%
+      :align: center
       :title: Figure: Set request timeout to accomodate Push OTP.
 
 8.	Click :guilabel:`OK` to save the timeout settings and :guilabel:`Apply` and :guilabel:`OK` to save the RADIUS Server settings
@@ -196,6 +203,7 @@ The configuration of the RD CAP Policy creates the necessary policies and settin
 
    .. thumbnail:: _images/setGroup.png
       :width: 80%
+      :align: center
       :title: Figure: Verify/set correct group.
 
 .. note:: By default, RDG will send the username in DOMAIN\User format, if STA user doesn’t have a username or an alias in the same format, the authentication will fail. To overcome this, UPN stripping is required, please see the steps below to configure attribute manipulation rule to adjust the username
@@ -220,6 +228,7 @@ The configuration of the RD CAP Policy creates the necessary policies and settin
 
    .. thumbnail:: _images/setAttribute.png
       :width: 80%
+      :align: center
       :title: Figure: Adding attribute(s).
 
 19.	Click on :guilabel:`Network Policies`
@@ -238,6 +247,7 @@ To test the configuration, adjust the RDP connection to use RD Gateway. The conn
 
    .. thumbnail:: _images/setDeploymentParameters.png
       :width: 80%
+      :align: center
       :title: Figure: Setting deployment parameters prior test.
 
 1.	Open RDP (mstsc)
@@ -256,6 +266,7 @@ To test the configuration, adjust the RDP connection to use RD Gateway. The conn
 
    .. thumbnail:: _images/adjustingLoginMethod.png
       :width: 80%
+      :align: center
       :title: Figure: Adjusting RPP login.
 
 7.	Click :guilabel:`OK` to save the settings
@@ -268,6 +279,7 @@ To test the configuration, adjust the RDP connection to use RD Gateway. The conn
 
    .. thumbnail:: _images/windowsPassword.png
       :width: 80%
+      :align: center
       :title: Figure: Providing Widows password as first factor.
 
 10.	After providing the credentials, the connection initiates:
@@ -277,6 +289,7 @@ To test the configuration, adjust the RDP connection to use RD Gateway. The conn
 
    .. thumbnail:: _images/connectingRDP.png
       :width: 80%
+      :align: center
       :title: Figure: RDP connection being established.
 
 11. The user receives and approves the Push Authentication request:
@@ -284,7 +297,8 @@ To test the configuration, adjust the RDP connection to use RD Gateway. The conn
 .. _push:
 
    .. thumbnail:: _images/approvingPush.png
-      :width: 80%
+      :width: 60%
+      :align: center
       :title: Figure: Approving Push OTP on MobilePASS+.
 
 12. After approving the Push Authentication request, the connection is established:
@@ -293,6 +307,7 @@ To test the configuration, adjust the RDP connection to use RD Gateway. The conn
 
    .. thumbnail:: _images/connectingRDPCont.png
       :width: 80%
+      :align: center
       :title: Figure: Connection is finalized / established.
 
 .. _appendix-a:
