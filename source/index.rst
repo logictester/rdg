@@ -459,6 +459,8 @@ Succesful attmpt:
    :title: Figure: Successful connection shown in Wireshark.
    :show_caption: true
 
+|
+
 Failed attempt:
 
 .. _error:
