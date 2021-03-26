@@ -65,8 +65,8 @@ To be able to use RDGW with STA RADIUS, an **Auth Node** has to be created with 
 
 4. Click :guilabel:`Add` to add a new **Auth Node**:
 
-   .. thumbnail:: /images/addingAuthNode.png
-      :width: 80%   
+   .. thumbnail:: _images/addingAuthNode.png
+      :width: 80%
       :title: Figure: Adding an Auth Node.
 
 .. _step:
