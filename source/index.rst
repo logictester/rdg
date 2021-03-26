@@ -260,6 +260,7 @@ To test the configuration, adjust the RDP connection to use RD Gateway. The conn
 
 .. thumbnail:: _images/pic9.png
 
+
 12. After approving the Push Authentication request, the connection is established:
 
 .. _connection:
