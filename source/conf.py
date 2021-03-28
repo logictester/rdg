@@ -39,8 +39,7 @@ extensions = [
     'sphinx_copybutton',
     'sphinx_rtd_theme',
     'sphinx_tabs.tabs',
-    'sphinxcontrib.blockdiag',
-    'rst2pdf.pdfbuilder'
+    'sphinxcontrib.blockdiag'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
