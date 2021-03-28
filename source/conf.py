@@ -169,7 +169,3 @@ modepdf_fit_background_mode = 'scale'
 
 # Repeat table header on tables that cross a page boundary?
 pdf_repeat_table_rows = True
-
-latex_elements = [
-  'extraclassoptions': ',openany,oneside'
-]
