@@ -171,5 +171,5 @@ modepdf_fit_background_mode = 'scale'
 pdf_repeat_table_rows = True
 
 latex_elements = [
-  'extraclassoptions': 'openany,oneside'
+  'extraclassoptions': ',openany,oneside'
 ]
