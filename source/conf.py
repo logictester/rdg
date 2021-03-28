@@ -86,9 +86,7 @@ blockdiag_fontpath = '_static/arial.ttf'
 #
 # would mean that specific document would be compressed# regardless of the global 'pdf_compressed'setting.
 
-pdf_documents = [
-        ('index', 'MyProject', 'My Project', 'Author Name'),
-]
+pdf_documents = [('index', u'rst2pdf', u'Sample rst2pdf doc', u'Your Name'),]
 
 # A comma-separated list of custom stylesheets. Example:
 
